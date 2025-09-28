@@ -1,0 +1,98 @@
+
+{
+  "categories": [
+    { "id": 1, "title": "Pizza", "isActive": true },
+    { "id": 2, "title": "Drinks", "isActive": true }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Pizza Margherita",
+      "isActive": true,
+      "description": "Classic pizza with tomato, mozzarella, and basil.",
+      "images": [],
+      "createdAt": "2025-09-28T12:00:00Z",
+      "price": 12.99,
+      "category": { "id": 1, "title": "Pizza" },
+      "stock": 20
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "fullName": "John Doe",
+      "gender": "male",
+      "gsm": "+1234567890",
+      "createdAt": "2025-09-28T10:00:00Z",
+      "isActive": true,
+      "avatar": [],
+      "addresses": [
+        { "text": "123 Main St, City", "coordinate": [40.7128, -74.006] }
+      ]
+    }
+  ],
+  "stores": [
+    {
+      "id": 1,
+      "title": "Pizza Palace",
+      "isActive": true,
+      "createdAt": "2025-09-25T09:00:00Z",
+      "gsm": "+1987654321",
+      "email": "contact@pizzapalace.com",
+      "address": { "text": "456 Market St, City", "coordinate": [40.7138, -74.007] },
+      "products": [1]
+    }
+  ],
+  "couriers": [
+    {
+      "id": 1,
+      "name": "Jane",
+      "surname": "Smith",
+      "email": "jane.smith@email.com",
+      "gender": "female",
+      "gsm": "+1122334455",
+      "createdAt": "2025-09-26T08:00:00Z",
+      "accountNumber": "123456789",
+      "licensePlate": "XYZ-1234",
+      "address": "789 Courier Rd, City",
+      "avatar": [],
+      "store": 1,
+      "status": { "id": 1, "text": "Available" },
+      "vehicle": { "model": "Yamaha", "vehicleType": "Bike", "engineSize": 125, "color": "red", "year": 2022, "id": 1 }
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "user": 1,
+      "createdAt": "2025-09-28T13:00:00Z",
+      "products": [1],
+      "status": { "id": 1, "text": "Delivered" },
+      "adress": { "text": "123 Main St, City", "coordinate": [40.7128, -74.006] },
+      "store": 1,
+      "courier": 1,
+      "events": [
+        { "date": "2025-09-28T13:05:00Z", "status": "Picked Up" },
+        { "date": "2025-09-28T13:20:00Z", "status": "Delivered" }
+      ],
+      "orderNumber": 1001,
+      "amount": 12.99
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "order": 1,
+      "user": 1,
+      "star": 5,
+      "createDate": "2025-09-28T14:00:00Z",
+      "status": "approved",
+      "comment": ["Great pizza!"]
+    }
+  ],
+  "trendingProducts": [
+    { "id": 1, "product": 1, "orderCount": 50 }
+  ]
+}
